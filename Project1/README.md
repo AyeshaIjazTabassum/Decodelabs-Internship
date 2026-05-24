@@ -87,13 +87,11 @@ Project1/
 
 # Installation Guide
 
-## Step 1 — Clone or Download Project
+## Step 1: Clone or Download Project
 
 Download the project folder and open it in VS Code or any code editor.
 
----
-
-## Step 2 — Install Flask
+## Step 2: Install Flask
 
 Open terminal in the project folder and run:
 
@@ -101,17 +99,13 @@ Open terminal in the project folder and run:
 pip install flask
 ```
 
----
-
-## Step 3 — Run the Application
+## Step 3: Run the Application
 
 ```bash
 python app.py
 ```
 
----
-
-## Step 4 — Open in Browser
+## Step 4: Open in Browser
 
 Open the following URL:
 
