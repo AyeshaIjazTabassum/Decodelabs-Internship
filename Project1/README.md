@@ -155,6 +155,18 @@ Users can interact with the chatbot using commands such as:
 - Exit
 - Quit
 
+## Professional Questions
+- Hello
+- Can you help me with funding for my startup?
+- Should I hire developer for my startup?
+- Why is marketing important for startups?
+- How can social media help my business grow?
+- What should I do before launch product?
+- Can you suggest a good startup idea?
+- How do I handle competition in the market?
+- What is the current startup status?
+- Help me understand how startup growth works.
+- Bye
 ---
 
 # How the Chatbot Works
