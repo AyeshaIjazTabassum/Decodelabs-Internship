@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VisionForge AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>StartUp AI</h2>
+
+        <p class="tagline">
+            Empowering Future Founders
+        </p>
+
+        <div class="menu">
+
+            <div class="menu-card">
+                💼 Startup Advisor
+            </div>
+
+            <div class="menu-card">
+                📈 Marketing Expert
+            </div>
+
+            <div class="menu-card">
+                💰 Funding Guide
+            </div>
+
+            <div class="menu-card">
+                🚀 Product Strategist
+            </div>
+
+        </div>
+
+        <div class="tips">
+
+            <h3>Quick Commands</h3>
+
+            <ul>
+                <li>Hello</li>
+                <li>Funding</li>
+                <li>Marketing</li>
+                <li>Hire Developer</li>
+                <li>Startup Idea</li>
+                <li>Status</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- CHAT AREA -->
+
+    <div class="chat-section">
+
+        <div class="chat-header">
+
+            <div class="logo">
+                🤖
+            </div>
+
+            <div>
+                <h1>StartUp AI</h1>
+                <p>AI Startup Assistant</p>
+            </div>
+
+        </div>
+
+        <div id="chatbox">
+
+            <div class="bot-message">
+                Welcome CEO! Ask me anything about startups,
+                funding, marketing, hiring or business growth.
+            </div>
+
+        </div>
+
+        <div class="typing" id="typing">
+            StartUp AI is typing...
+        </div>
+
+        <!-- QUICK BUTTONS -->
+
+        <div class="quick-buttons">
+
+            <button onclick="quickMessage('funding')">
+                Funding
+            </button>
+
+            <button onclick="quickMessage('marketing')">
+                Marketing
+            </button>
+
+            <button onclick="quickMessage('hire developer')">
+                Hiring
+            </button>
+
+            <button onclick="quickMessage('growth')">
+                Growth
+            </button>
+
+        </div>
+
+        <!-- INPUT -->
+
+        <div class="input-area">
+
+            <input type="text"
+                   id="userInput"
+                   placeholder="Ask your startup question...">
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function quickMessage(text) {
+
+    $("#userInput").val(text);
+
+    sendMessage();
+}
+
+function sendMessage() {
+
+    let userText = $("#userInput").val();
+
+    if(userText.trim() === "") return;
+
+    $("#chatbox").append(
+        '<div class="user-message">' + userText + '</div>'
+    );
+
+    $("#typing").show();
+
+    $.post("/get", {msg: userText}, function(data) {
+
+        setTimeout(function() {
+
+            $("#typing").hide();
+
+            $("#chatbox").append(
+                '<div class="bot-message">' + data + '</div>'
+            );
+
+            $("#chatbox").scrollTop(
+                $("#chatbox")[0].scrollHeight
+            );
+
+        }, 800);
+
+    });
+
+    $("#userInput").val("");
+}
+
+$("#userInput").keypress(function(e) {
+
+    if(e.which == 13) {
+
+        sendMessage();
+    }
+});
+
+</script>
+
+</body>
+</html>
