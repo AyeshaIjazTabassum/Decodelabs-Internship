@@ -15,7 +15,7 @@ This project was developed as part of the **Artificial Intelligence Internship P
 
 ---
 
-# 📌 Project Objective
+# Project Objective
 
 The objective of this project is to create a chatbot that:
 
@@ -29,25 +29,25 @@ Unlike AI-powered chatbots that use machine learning, this chatbot uses pure log
 
 ---
 
-# ✨ Features
+# Features
 
 ## 🤖 Intelligent Startup Assistant
 The chatbot provides startup-related guidance and suggestions.
 
-## 🎨 Modern Futuristic UI
+## Modern Futuristic UI
 - Glassmorphism design
 - Dark premium theme
 - Animated chatbot interface
 - Sidebar dashboard
 - Responsive layout
 
-## ⚡ Interactive Chat Experience
+## Interactive Chat Experience
 - Typing animation
 - Enter key support
 - Quick command buttons
 - Smooth message animations
 
-## 🧠 Rule-Based Decision Logic
+## Rule-Based Decision Logic
 Built entirely using:
 - if-else conditions
 - predefined responses
@@ -55,7 +55,7 @@ Built entirely using:
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -68,7 +68,7 @@ Built entirely using:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```plaintext
 Project1/
@@ -85,7 +85,7 @@ Project1/
 
 ---
 
-# ⚙️ Installation Guide
+# Installation Guide
 
 ## Step 1 — Clone or Download Project
 
@@ -121,7 +121,7 @@ http://127.0.0.1:5000
 
 ---
 
-# 💬 Available Commands
+# Available Commands
 
 Users can interact with the chatbot using commands such as:
 
@@ -163,7 +163,7 @@ Users can interact with the chatbot using commands such as:
 
 ---
 
-# 🧠 How the Chatbot Works
+# How the Chatbot Works
 
 The chatbot uses rule-based programming.
 
@@ -182,7 +182,7 @@ The chatbot:
 
 ---
 
-# 🎨 UI Design Highlights
+# UI Design Highlights
 
 The frontend was designed to look modern and professional.
 
@@ -196,7 +196,7 @@ The frontend was designed to look modern and professional.
 
 ---
 
-# 📚 Learning Outcomes
+# Learning Outcomes
 
 Through this project, the following concepts were learned:
 
@@ -210,7 +210,7 @@ Through this project, the following concepts were learned:
 
 ---
 
-# 🎯 Why This Project Is Unique
+# Why This Project Is Unique
 
 Unlike basic chatbot projects, StartUp AI:
 - Uses a futuristic interface
@@ -221,14 +221,14 @@ Unlike basic chatbot projects, StartUp AI:
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 ### Ayesha Ijaz
 Artificial Intelligence Intern
 
 ---
 
-# 📄 License
+# License
 
 This project is developed for educational and internship purposes.
 
