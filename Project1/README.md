@@ -31,7 +31,7 @@ Unlike AI-powered chatbots that use machine learning, this chatbot uses pure log
 
 # Features
 
-## 🤖 Intelligent Startup Assistant
+## Intelligent Startup Assistant
 The chatbot provides startup-related guidance and suggestions.
 
 ## Modern Futuristic UI
@@ -234,6 +234,6 @@ This project is developed for educational and internship purposes.
 
 ---
 
-# 🌟 Final Note
+# Final Note
 
 StartUp AI demonstrates how powerful and interactive a chatbot can become using only rule-based programming and creative UI design without using machine learning or deep learning.
