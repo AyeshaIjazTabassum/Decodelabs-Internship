@@ -1,4 +1,4 @@
-# 🚀 StartUp AI
+# StartUp AI
 ### Rule-Based Startup Assistant Chatbot
 
 StartUp AI is a modern rule-based chatbot built using **Python Flask**, **HTML**, **CSS**, and **JavaScript**.  
