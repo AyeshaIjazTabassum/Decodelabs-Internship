@@ -284,7 +284,7 @@ http://google.verify-login-alert.ru
 
 | Algorithm | Accuracy |
 | --------- | -------- |
-| XGBoost   | 98%      |
+| XGBoost   | 99%      |
 
 ---
 
