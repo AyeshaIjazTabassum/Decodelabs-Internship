@@ -188,7 +188,7 @@ The project includes a modern cybersecurity-themed UI with:
 ## 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AyeshaIjazTabassum/Decodelabs-Internship.git
 ```
 
 ---
