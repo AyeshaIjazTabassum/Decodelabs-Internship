@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Phishing Detector</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>AI Phishing Detector</h1>
+
+        <p>
+            Intelligent Website Threat Detection System
+        </p>
+
+    </div>
+
+    <form method="POST">
+
+        <div class="input-group">
+
+            <input
+                type="text"
+                name="url"
+                placeholder="Paste website URL here..."
+                required
+            >
+
+        </div>
+
+        <button type="submit">
+
+            Analyze Website
+
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+    <div class="result-card">
+
+        {% if prediction == "SAFE WEBSITE" %}
+
+            <div class="safe">
+
+                <h2>SAFE WEBSITE</h2>
+
+                <p>
+                    This website appears legitimate and safe.
+                </p>
+
+            </div>
+
+        {% else %}
+
+            <div class="phishing">
+
+                <h2>PHISHING WEBSITE DETECTED</h2>
+
+                <p>
+                    Warning! This website shows suspicious phishing patterns.
+                </p>
+
+            </div>
+
+        {% endif %}
+
+        <div class="confidence">
+
+            Confidence Score
+
+            <span>{{ confidence }}%</span>
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+    {% if error %}
+
+    <div class="error-card">
+
+        <h3>Error</h3>
+
+        <p>{{ error }}</p>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>

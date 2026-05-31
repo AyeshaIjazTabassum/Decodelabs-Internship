@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #050816;
+
+    color: white;
+}
+
+
+/* Animated Background */
+
+.background {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        radial-gradient(circle at top left, #7c3aed, transparent 35%),
+        radial-gradient(circle at bottom right, #06b6d4, transparent 35%),
+        #050816;
+
+    animation: animateBackground 8s infinite alternate;
+}
+
+
+@keyframes animateBackground {
+
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(10px);
+    }
+}
+
+
+/* Main Container */
+
+.container {
+
+    position: relative;
+
+    z-index: 10;
+
+    width: 500px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(20px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.5),
+        0 0 80px rgba(124,58,237,0.25);
+
+    text-align: center;
+}
+
+
+/* Header */
+
+.header h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        to right,
+        #a855f7,
+        #06b6d4
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.header p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 35px;
+
+    font-size: 16px;
+}
+
+
+/* Input */
+
+.input-group {
+
+    margin-bottom: 25px;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background: rgba(255,255,255,0.1);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    transition: 0.3s;
+}
+
+
+input::placeholder {
+
+    color: #cbd5e1;
+}
+
+
+input:focus {
+
+    border: 1px solid #06b6d4;
+
+    box-shadow: 0 0 15px rgba(6,182,212,0.5);
+}
+
+
+/* Button */
+
+button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        to right,
+        #7c3aed,
+        #06b6d4
+    );
+
+    color: white;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 20px rgba(124,58,237,0.4);
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(6,182,212,0.6),
+        0 0 40px rgba(124,58,237,0.5);
+}
+
+
+/* Result Card */
+
+.result-card {
+
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.07);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    animation: fadeIn 0.5s ease;
+}
+
+
+.safe h2 {
+
+    color: #22c55e;
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+}
+
+
+.phishing h2 {
+
+    color: #ef4444;
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+}
+
+
+.result-card p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* Confidence */
+
+.confidence {
+
+    font-size: 18px;
+
+    color: white;
+
+    margin-top: 15px;
+}
+
+
+.confidence span {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #06b6d4;
+}
+
+
+/* Error */
+
+.error-card {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(239,68,68,0.15);
+
+    border: 1px solid rgba(239,68,68,0.3);
+}
+
+
+.error-card h3 {
+
+    color: #ef4444;
+
+    margin-bottom: 10px;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+
+@media(max-width: 600px) {
+
+    .container {
+
+        width: 90%;
+
+        padding: 30px;
+    }
+
+    .header h1 {
+
+        font-size: 32px;
+    }
+}
