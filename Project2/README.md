@@ -103,8 +103,8 @@ The system follows a complete machine learning pipeline:
 
 The model is trained using a phishing website dataset containing:
 
-* legitimate websites
-* phishing websites
+* Legitimate websites
+* Phishing websites
 
 Each row contains engineered URL features and labels.
 
@@ -136,9 +136,9 @@ The system extracts multiple cybersecurity-related features from URLs.
 
 The dataset is:
 
-* cleaned
-* split into training/testing sets
-* scaled using StandardScaler
+* Cleaned
+* Split into training/testing sets
+* Scaled using StandardScaler
 
 ---
 
@@ -160,7 +160,7 @@ XGBoost Classifier
 
 ---
 
-## Step 5 — Prediction
+## Step 5: Prediction
 
 The trained model predicts whether a website is:
 
@@ -211,7 +211,7 @@ pip install -r requirements.txt
 
 # Running the Project
 
-## Step 1 — Train the Model
+## Step 1: Train the Model
 
 ```bash
 python train_model.py
@@ -224,7 +224,7 @@ This generates:
 
 ---
 
-## Step 2 — Run Flask Application
+## Step 2: Run Flask Application
 
 ```bash
 python app.py
@@ -232,7 +232,7 @@ python app.py
 
 ---
 
-## Step 3 — Open Browser
+## Step 3: Open Browser
 
 ```bash
 http://127.0.0.1:5000
@@ -318,13 +318,13 @@ The project can be upgraded further with:
 
 This project demonstrates:
 
-* supervised machine learning
-* classification algorithms
-* feature engineering
+* Supervised machine learning
+* Classification algorithms
+* Feature engineering
 * Flask web development
-* cybersecurity fundamentals
+* Cybersecurity fundamentals
 * AI model deployment
-* frontend/backend integration
+* Frontend/backend integration
 
 ---
 
