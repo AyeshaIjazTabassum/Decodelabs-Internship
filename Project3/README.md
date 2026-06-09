@@ -198,7 +198,7 @@ Project3/
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AyeshaIjazTabassum/Decodelabs-Internship.git
 cd Project3
 ```
 
