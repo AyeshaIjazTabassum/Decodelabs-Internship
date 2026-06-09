@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Gap Recommender</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>AI Skill Gap Recommender</h1>
+
+        <p>
+            Discover your career readiness score,
+            missing skills, learning roadmap and
+            recommended projects.
+        </p>
+
+    </div>
+
+    <div class="glass-card">
+
+        <form id="uploadForm" enctype="multipart/form-data">
+
+            <div class="input-group">
+
+                <label>Upload Resume</label>
+
+                <input type="file"
+                       name="resume"
+                       accept=".pdf"
+                       required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Target Career</label>
+
+                <select name="role">
+
+                    <option>AI Engineer</option>
+                    <option>Data Scientist</option>
+                    <option>ML Engineer</option>
+                    <option>Backend Developer</option>
+                    <option>Cybersecurity Analyst</option>
+
+                </select>
+
+            </div>
+
+            <button type="submit">
+                Analyze Resume
+            </button>
+
+        </form>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
