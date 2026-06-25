@@ -1,0 +1,99 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================
+# Flask
+# ==========================
+instance/
+.webassets-cache/
+
+# Uploaded Images
+static/uploads/*
+
+# Keep folder structure
+!static/uploads/.gitkeep
+
+# ==========================
+# TensorFlow / Keras Models
+# ==========================
+*.h5
+*.keras
+*.pb
+*.tflite
+
+model/
+!model/.gitkeep
+
+# ==========================
+# Jupyter Notebooks
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# PyCharm
+# ==========================
+.idea/
+
+# ==========================
+# Windows
+# ==========================
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# macOS
+# ==========================
+.DS_Store
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+
+# ==========================
+# Testing
+# ==========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================
+# Build Files
+# ==========================
+build/
+dist/
+*.egg-info/
+
+# ==========================
+# Dataset (Optional)
+# Uncomment if dataset is large
+# ==========================
+# dataset/
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.temp

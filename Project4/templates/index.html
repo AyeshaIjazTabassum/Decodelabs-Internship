@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Smart Waste Classification Advisor
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>
+            ♻ Smart Waste Classification Advisor
+        </h1>
+
+        <p>
+            AI-Powered Waste Recognition & Recycling Recommendation System
+        </p>
+
+    </div>
+
+    <div class="upload-card">
+
+        <label
+            for="imageInput"
+            class="upload-area">
+
+            <div class="upload-icon">
+                ♻️
+            </div>
+
+            <h2>
+                Upload Waste Image
+            </h2>
+
+            <p>
+                Click Here To Upload An Image
+            </p>
+
+        </label>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*">
+
+        <img id="preview">
+
+        <button
+            class="analyze-btn"
+            onclick="predictWaste()">
+
+            Analyze Waste
+
+        </button>
+
+        <div
+            class="loader"
+            id="loader">
+
+            <div class="spinner"></div>
+
+            <p>
+                AI is analyzing waste...
+            </p>
+
+        </div>
+
+    </div>
+
+    <div
+        id="result-card"
+        class="result-card">
+
+        <h2
+            id="waste-name"
+            class="result-title">
+        </h2>
+
+        <div class="confidence-circle">
+
+            <div
+                id="confidence"
+                class="confidence-text">
+            </div>
+
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+
+                <h3>
+                    ♻ Recyclable
+                </h3>
+
+                <p id="recyclable"></p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    🗑 Disposal Bin
+                </h3>
+
+                <p id="bin"></p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>
+                    🌍 Environmental Impact
+                </h3>
+
+                <p id="impact"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
