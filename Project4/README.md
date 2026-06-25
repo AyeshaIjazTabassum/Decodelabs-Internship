@@ -155,7 +155,7 @@ The model classifies waste into six categories:
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/AyeshaIjazTabassum/Decodelabs-Internship
+git clone https://github.com/AyeshaIjazTabassum/Decodelabs-Internship.git
 cd Project4
 ```
 
@@ -282,12 +282,8 @@ Through this project, the following concepts were explored:
 **Ayesha Ijaz**
 
 AI Intern at DecodeLabs
-
 ---
 
 # License
 
 This project is developed for educational and internship purposes.
-
-```
-```
