@@ -155,7 +155,7 @@ The model classifies waste into six categories:
 ## 1. Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/AyeshaIjazTabassum/Decodelabs-Internship
 cd Project4
 ```
 
